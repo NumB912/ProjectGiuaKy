@@ -23,7 +23,11 @@
         android:id="@+id/fourth"
         android:name="com.example.navigation.Fourth"
         android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth" />
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourth_to_fifthFragment"
+            app:destination="@id/fifthFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.navigation.SecondFragment"
@@ -48,4 +52,9 @@
             android:id="@+id/Settings_To_Home"
             app:destination="@id/firstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.example.navigation.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" />
 </navigation>
